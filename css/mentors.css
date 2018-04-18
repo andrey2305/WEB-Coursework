@@ -1,0 +1,54 @@
+.mentor-tags {
+    width: 65%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mentor-item {
+    position: relative;
+    display: flex;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    width: 300px;
+    min-height: 350px;
+    height: 600px;
+    transition: 0.3s;
+}
+
+.mentor-item:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 82px 10px rgba(204, 204, 223, 0.7);
+}
+
+.mentor-item img {
+    width: 14rem;
+    border-radius: 0.4rem;
+}
+
+
+.mentor-item span {
+    font-size: 14px;
+    width: 12rem;
+    color: #aaa;
+}
+
+.mentor-item h4 {
+    font-size: 24px;
+    color: #333;
+}
+
+.mentor-item p {
+    font-size: 16px;
+    width: 14rem;
+    color: #aaa;
+}

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Практика</title>
+
+<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/table.css">
+	<link rel="stylesheet" href="css/mentors.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+
+
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+
+<!-- JS -->
+	<script src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/formToWizard.js"></script>
+    <script type="text/javascript">
+        function MakeWizard() {
+            $("#SignupForm").formToWizard({ submitButton: 'SaveAccount'});
+
+            $(window).on('beforeunload', function(){
+            	$(window).scrollTop(0);
+            });
+
+        }
+    </script>
+	
+</head>
+<body onload="MakeWizard()">
+	<div class="container" id="container">
+		<div class="pimg1">
+			<div class="main no-select" id="main">
+	            <div class="main-overlay"></div>
+	            <div class="header no-vis" id="avatar">
+	                <div class="logo">
+	                    <span class="no-select">M.I.F.</span>
+	                </div>
+	                <nav class="menu wow fadeInRight" data-wow-delay="0.5s">
+	                    <ul id="nav">
+	                    	<li class="link active-menu"><a href="#main" data-target="anchor" class="menu-link">Головна</a></li>
+	                        <li class="link"><a href="#table" data-target="anchor" class="menu-link">Керівники</a></li>
+	                        <li class="link"><a href="#info" data-target="anchor" class="menu-link">Інформація</a></li>
+	                        <li class="link"><a href="#company" data-target="anchor" class="menu-link">IT-Компанії</a></li>	          
+	                        <li class="link"><a href="#contact" data-target="anchor" class="menu-link">Контакти</a></li>
+	                    </ul>  
+	                </nav>
+	            </div>
+	            <div class="main-text">
+	                <span class="wow fadeIn" data-wow-delay="1.5s">досвід запорука успіху</span>
+	                <h1>Проходження практики</h1>
+	                <p class="wow fadeIn" data-wow-delay="1.5s">Сайт було створено для студентів, які проходять виробничу практику. Тут можна дізнатись всю інформацію стосовно практики.</p>
+	            </div>
+	            <div class="main-btn js-button wow fadeInUp" data-wow-delay="2s">
+	            	<span>РЕЄСТРАЦІЯ ПРАКТИКИ</span>
+	            </div>
+	            <a href="#table" data-target="anchor" class="main-arrow">
+	                <div class="arrow-down">
+	                    <img src="img/arrow-down.svg" alt="arrow">
+	                </div>
+	            </a>  
+	        </div>
+    	</div>
+
+		<section>
+		<div id="table" class="table">
+	            <div class="table-header">
+	            	<div class="wow fadeInLeft" data-wow-delay="0.5s">
+		                <h2>Керівники</h2>
+		                <h3>Керівники</h3>
+	                </div>
+	                <p class="wow fadeIn" data-wow-delay="0.5s">талант утворюється в тиші, характер - у бурхливих подіях світла</p>
+	            </div>  
+	        <section class="slider">
+				<div class="slide slide--current" data-content="content-1">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor1.jpg" alt="m1" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>д.ф.-м.н., зав.кафедри</br>yaroslav.bihun@gmail.com</span>Бігун Ярослав Йосипович</h2>
+				</div>
+				
+				<div class="slide" data-content="content-2">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor2.jpg" alt="m2" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>к.ф.-м.н., асистент</br>danuliuk@gmail.com</span>Данилюк Іван Михайлович</h2>
+				</div>
+
+				<div class="slide" data-content="content-3">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor3.jpg" alt="m3" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>аспірант</br>knig.tatyana.v@gmail.com</span>Кнігніцька Тетяна Василівна</h2>
+				</div>
+
+				<div class="slide" data-content="content-4">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor4.jpg" alt="m4" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>к.ф.-м.н.,асистент</br>i.krasnokutska@chnu.edu.ua</span>Краснокутська Інесса Володимирівна</h2>
+				</div>
+
+				<div class="slide" data-content="content-5">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor5.jpg" alt="m5" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>к.ф.-м.н., асистент</br>finvara@gmail.com</span>Любарщук Євген Анатолійович</h2>
+				</div>
+
+				<div class="slide" data-content="content-6">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor6.jpg" alt="m6" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>к.ф.-м.н., доцент</br>vgmatsenko@gmail.com</span>Маценко Василь Григорович</h2>
+				</div>
+
+				<div class="slide" data-content="content-7">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor7.jpg" alt="m7" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>к.е.н., асистент</br>firstmy555@gmail.com</span>Мельник Галина Василівна</h2>
+				</div>
+
+				<div class="slide" data-content="content-8">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor8.jpg" alt="m8" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>ст. лаборант</br>&nbsp;</span>Никифорук Світлана Василівна</h2>
+				</div>
+
+				<div class="slide" data-content="content-9">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor9.jpg" alt="m9" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>завідувач лабораторії</br>&nbsp;</span> Романенко Наталія Вікторівна</h2>
+				</div>
+
+				<div class="slide" data-content="content-10">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor10.jpg" alt="m10" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>к.ф.-м.н., асистент</br>sergeevalms@gmail.com</span>Сергєєва Лідія Миколіївна</h2>
+				</div>
+
+				<div class="slide" data-content="content-11">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor11.jpg" alt="m11" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>асистент</br>ihor27@gmail.com</span>Скутар Ігор Дмитрович</h2>
+				</div>
+
+				<div class="slide" data-content="content-12">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor12.jpg" alt="iPhone" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>к. ф.-м.н., доцент</br>t.sopronyuk@chnu.edu.ua</span>Сопронюк Тетяна Миколаївна</h2>
+				</div>
+
+				<div class="slide" data-content="content-13">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor13.jpg" alt="iPhone" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>к.ф.-м.н, доцент</br>filko@ukr.net</span>Філіпчук Микола Петрович</h2>
+				</div>
+
+				<div class="slide" data-content="content-14">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor14.jpg" alt="iPhone" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>к.т.н., доцент</br>shepetyukb@gmail.com</span>Шепетюк Богдан Дмитрович</h2>
+				</div>
+
+				<div class="slide" data-content="content-15">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image img-men" src="img/mentor15.jpg" alt="iPhone" />
+							<div class="preview">
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>асистент</br>nastycia26@gmail.com</span>Юрійчук Анастасія Олександрівна</h2>
+				</div>
+
+				<nav class="slider__nav">
+					<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">prev</span></button>
+					<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">detalise</span></button>
+					<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">next</span></button>
+				</nav>
+			</section>
+			<!-- /slider-->
+			<section class="content">
+				<div class="content__item" id="content-1">
+					<img class="content__item-img rounded-right" src="img/mentor1.jpg" alt="m1" />
+					<div class="content__item-inner">
+						<h2>Бігун Ярослав Йосипович</h2>
+						<h3><span>д. ф.-м.н., зав. кафедри</span><p>yaroslav.bihun@gmail.com </p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Диференціально-функціональні рівняння із повільними та швидкими змінними.</li>
+							<li>Обгрунтування методу усереднення для багаточастотних систем із запізненням і з початковими та крайовими умовами.</li>
+							<li>Асимптотичні методи для диференціальних рівнянь із звичайними та частинними похідними.</li>
+							<li>Математичне моделювання соціальних процесів та процесів в імунології.</li>
+						</ul>
+						<p><a href="http://pm.fmi.org.ua/employees/23583">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+				<div class="content__item" id="content-2">
+					<img class="content__item-img rounded-right" src="img/mentor2.jpg" alt="m2" />
+					<div class="content__item-inner">
+						<h2>Данилюк Іван Михайлович</h2>
+						<h3><span>к.ф.-м.н., асистент</span>
+							<p>danuliuk@gmail.com</p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Обгрунтування методу усереднення за всіма швидкими змінними для багаточастотних нелінійних систем із запізненням на відрізку та півосі.</li>
+							<li>Дослідження багатоточкових та інтегральних крайових задач для багаточастотних коливних систем із запізненням.</li>
+							<li>Побудова інтегрального многовиду багаточастотної системи із запізненням.</li>
+						</ul>
+						</p>
+						<p><a href="http://pm.fmi.org.ua/employees/23585">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+				<div class="content__item" id="content-3">
+					<img class="content__item-img rounded-right" src="img/mentor3.jpg" alt="m3" />
+					<div class="content__item-inner">
+						<h2>Кнігніцька Тетяна Василівна</h2>
+						<h3><span>аспірант</span>
+							<p>knig.tatyana.v@gmail.com</p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Властивості та оцінки параметрів авторегресійних моделей.</li>
+							<li>Дослідження стаціонарних часових рядів.</li>
+							<li>Марковські процеси зі скінченною пам’яттю, математичними моделями яких є стохастичні різницеві рівняння.</li>
+						</ul>
+						<p><a href="http://pm.fmi.org.ua/employees/23598">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+				<div class="content__item" id="content-4">
+					<img class="content__item-img rounded-right" src="img/mentor4.jpg" alt="m4" />
+					<div class="content__item-inner">
+						<h2>Краснокутська Інесса Володимирівна</h2>
+						<h3><span>к.ф.-м.н.,асистент</span>
+							<p>i.krasnokutska@chnu.edu.ua</p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Алгоритми та структури даних.</li>
+							<li>Розробка UI / UX дизайну.</li>
+							<li>Сучасні інформаційні технології.</li>
+							<li>Паралельне програмування.</li>
+						</ul>
+						<p><a href="http://pm.fmi.org.ua/employees/23584">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+				<div class="content__item" id="content-5">
+					<img class="content__item-img rounded-right" src="img/mentor5.jpg" alt="m5" />
+					<div class="content__item-inner">
+						<h2>Любарщук Євген Анатолійович</h2>
+						<h3><span>к.ф.-м.н., асистент</span>
+							<p>finvara@gmail.com </p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Frontend-розробка Web-одатків.</li>
+							<li>Конфліктно-керовані процеси.</li>
+							<li>Математичні моделі динамічних систем.</li>
+						</ul>
+						<p><a href="http://pm.fmi.org.ua/employees/23590">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+
+				<div class="content__item" id="content-6">
+					<img class="content__item-img rounded-right" src="img/mentor6.jpg" alt="m" />
+					<div class="content__item-inner">
+						<h2>Маценко Василь Григорович</h2>
+						<h3><span>к. ф.-м.н., доцент</span>
+							<p>vgmatsenko@gmail.com</p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li> Обчислювальна геометрія та комп’ютерна графіка.</li>
+							<li>Математичне моделювання та системний аналіз.</li>
+							<li>Комп’ютерне моделювання еколого-економічних систем.</li>
+							<li>Обчислювальна техніка і основи програмування.</li>
+						</ul>
+						<p><a href="http://pm.fmi.org.ua/employees/23591">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+
+				<div class="content__item" id="content-7">
+					<img class="content__item-img rounded-right" src="img/mentor7.jpg" alt="m" />
+					<div class="content__item-inner">
+						<h2>Мельник Галина Василівна</h2>
+						<h3><span>к. е. н., асистент</span>
+							<p>firstmy555@gmail.com </p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Технологія проектування корпоративних інформаційних систем.</li>
+							<li>Аналіз та управління інформаційними ризиками.</li>
+							<li>Неокласичний та некласичний підхід до моделювання ризиків.</li>
+						</ul>
+						<p><a href="http://pm.fmi.org.ua/employees/23586">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+
+				<div class="content__item" id="content-8">
+					<img class="content__item-img rounded-right" src="img/mentor8.jpg" alt="m" />
+					<div class="content__item-inner">
+						<h2>Никифорук Світлана Василівна</h2>
+						<h3><span>ст. лаборант</span>
+							<p></p></h3>
+						
+						<p><a href="">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+
+				<div class="content__item" id="content-9">
+					<img class="content__item-img rounded-right" src="img/mentor9.jpg" alt="m" />
+					<div class="content__item-inner">
+						<h2>Романенко Наталія Вікторівна</h2>
+						<h3><span>Завідувач лабораторії.</span>
+							<p></p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Технології програ­мування на Java.</li>
+							<li>Контроль якості та тестування програмного забез­печення.</li>
+							<li>Проектування програмних систем.</li>
+						</ul>
+						<p><a href="http://pm.fmi.org.ua/employees/23594">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+
+				<div class="content__item" id="content-10">
+					<img class="content__item-img rounded-right" src="img/mentor10.jpg" alt="m" />
+					<div class="content__item-inner">
+						<h2>Сергєєва Лідія Миколіївна</h2>
+						<h3><span>к.ф.-м.н., асистент</span>
+							<p>sergeevalms@gmail.com </p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Дослідження глобальних розв’язків функціонально-диференціальних рівнянь та диференціальних рівнянь нейтрального типу.</li>
+							<li>Знаходження початкових умов для параболічного рівняння з відхиленням аргументу.</li>
+							<li>Математичне моделювання процесів в імунології.</li>
+						</ul>
+						<p><a href="http://pm.fmi.org.ua/employees/23595">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+			
+				<!-- <div class="content__item" id="content-11">
+					<img class="content__item-img rounded-right" src="img/apple-watch-content.png" alt="Apple Watch Content" />
+					<div class="content__item-inner">
+						<h2>Кнігніцька Тетяна Василівна</h2>
+						<h3><span>аспірант</span>
+							<p>knig.tatyana.v@gmail.com</p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Властивості та оцінки параметрів авторегресійних моделей.</li>
+							<li>Дослідження стаціонарних часових рядів.</li>
+							<li>Марковські процеси зі скінченною пам’яттю, математичними моделями яких є стохастичні різницеві рівняння.</li>
+						</ul>
+						<p><a href="https://www.apple.com/watch/new-ways-to-connect/">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+
+				<div class="content__item" id="content-12">
+					<img class="content__item-img rounded-right" src="img/apple-watch-content.png" alt="Apple Watch Content" />
+					<div class="content__item-inner">
+						<h2>Кнігніцька Тетяна Василівна</h2>
+						<h3><span>аспірант</span>
+							<p>knig.tatyana.v@gmail.com</p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Властивості та оцінки параметрів авторегресійних моделей.</li>
+							<li>Дослідження стаціонарних часових рядів.</li>
+							<li>Марковські процеси зі скінченною пам’яттю, математичними моделями яких є стохастичні різницеві рівняння.</li>
+						</ul>
+						<p><a href="https://www.apple.com/watch/new-ways-to-connect/">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+
+				<div class="content__item" id="content-13">
+					<img class="content__item-img rounded-right" src="img/apple-watch-content.png" alt="Apple Watch Content" />
+					<div class="content__item-inner">
+						<h2>Кнігніцька Тетяна Василівна</h2>
+						<h3><span>аспірант</span>
+							<p>knig.tatyana.v@gmail.com</p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Властивості та оцінки параметрів авторегресійних моделей.</li>
+							<li>Дослідження стаціонарних часових рядів.</li>
+							<li>Марковські процеси зі скінченною пам’яттю, математичними моделями яких є стохастичні різницеві рівняння.</li>
+						</ul>
+						<p><a href="https://www.apple.com/watch/new-ways-to-connect/">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+
+				<div class="content__item" id="content-14">
+					<img class="content__item-img rounded-right" src="img/apple-watch-content.png" alt="Apple Watch Content" />
+					<div class="content__item-inner">
+						<h2>Кнігніцька Тетяна Василівна</h2>
+						<h3><span>аспірант</span>
+							<p>knig.tatyana.v@gmail.com</p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Властивості та оцінки параметрів авторегресійних моделей.</li>
+							<li>Дослідження стаціонарних часових рядів.</li>
+							<li>Марковські процеси зі скінченною пам’яттю, математичними моделями яких є стохастичні різницеві рівняння.</li>
+						</ul>
+						<p><a href="https://www.apple.com/watch/new-ways-to-connect/">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div>
+
+				<div class="content__item" id="content-15">
+					<img class="content__item-img rounded-right" src="img/apple-watch-content.png" alt="Apple Watch Content" />
+					<div class="content__item-inner">
+						<h2>Кнігніцька Тетяна Василівна</h2>
+						<h3><span>аспірант</span>
+							<p>knig.tatyana.v@gmail.com</p></h3>
+						<h4>Наукові інтереси:</h4>
+						<ul>
+							<li>Властивості та оцінки параметрів авторегресійних моделей.</li>
+							<li>Дослідження стаціонарних часових рядів.</li>
+							<li>Марковські процеси зі скінченною пам’яттю, математичними моделями яких є стохастичні різницеві рівняння.</li>
+						</ul>
+						<p><a href="https://www.apple.com/watch/new-ways-to-connect/">Більше інформації дізнаєтесь тут &xrarr;</a></p>
+					</div>
+				</div> -->
+				<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+			</section>  
+	    </div>
+	    </section>
+
+		<div class="pimg2">
+			<div class="info" id="info">
+				<div class="info-cont">
+					<h3 class="wow fadeInLeft title" data-wow-offset="300">Інформація про практику</h3>
+					<div class="info-text wow fadeInLeft" data-wow-delay="0.5s" data-wow-offset="300" >
+						<span></span>
+						<p>Скоріше всього ти студент четвертого курсу нашого факультету. Якщо ти хочеш отримати більше інформації щодо практики, то тобі саме сюди. Внизу є кнопка, там тебе чекає декілька файлів. Завантаж їх собі і уважно ознайомся з інформацією на рахунок практики.</p>
+					</div>
+						<a class="btnflip wow fadeIn" data-wow-delay=".1s" href="ІнформаціяПроПрактику.zip" download>
+							<div class="btnflip-item btnflip__front">завантажити</div>
+							<div class="btnflip-item btnflip__center"></div>
+							<div class="btnflip-item btnflip__back">впевнені?</div>
+						</a>
+				</div>
+			</div>
+		</div>
+		<section>
+		    <div class="company" id="company">
+		    	<div class="comp-header">
+	            	<div class="wow fadeInLeft" data-wow-delay="0.5s">
+		                <h2>IT-Компанії Чернівців</h2>
+		                <h3>IT-Компанії Чернівців</h3>
+	                </div>
+	                <p class="wow fadeIn" data-wow-delay="0.5s">твій шлях до розвитку</p>
+	            </div>
+		    	<div class="content-company">
+			    	<section class="company-item left-item" id="c2">
+			    		<div class="img-company comp1 wow fadeInLeft" data-wow-duration="2s" data-wow-offset="150">
+									
+			    		</div>
+			    		<div class="company-item-cont wow fadeInRight" data-wow-duration="2s" data-wow-offset="150">
+			    			<p>Кожне рішення SoftServe складається з бізнесових та технічних новаторів, які працюють на стику цифрових перетворень та технологій, розкриваючи бізнес-потенціал та нових можливостей.</p>
+			    			<a href="https://www.softserveinc.com/en-US/">
+			    				детальніше &xrarr;
+			    			</a>
+			    		</div>
+			    	</section>
+			    	<section class="company-item right-item " id="c2">
+
+			    		<div class="company-item-cont wow fadeInLeft" data-wow-duration="2s" data-wow-offset="150">
+			    			<p>Bizico - це аутсорсингова компанія, яка розпочала свою роботу для клієнтів у 2009 році. Ми створюємо розумні користувацькі програми, веб та мобільні рішення та надаємо цінні консультації щодо впровадження IT-бізнесу.</p>
+			    			<a href="https://bizico.com/">
+			    				детальніше &xrarr;
+			    			</a>
+			    		</div>
+			    		<div class="img-company comp2 wow fadeInRight" data-wow-duration="2s" data-wow-offset="150">	
+			    		</div>
+			    	</section>
+			    	<section class="company-item left-item">
+			    		<div class="img-company comp3 wow fadeInLeft" data-wow-duration="2s" data-wow-offset="150">
+									
+			    		</div>
+			    		<div class="company-item-cont wow fadeInRight" data-wow-duration="2s" data-wow-offset="150">
+			    			<p>AMC Bridge – це компанія, заснована досвідченими спеціалістами у галузі інформаційних технологій, що надає рішення для систем автоматизованого проектування, конструювання та виробництва, а також систем управління даними щодо продукту, та керування його життєвим циклом.</p>
+			    			<a href="http://amcbridge.com.ua/ua">
+			    				детальніше &xrarr;
+			    			</a>
+			    		</div>
+			    	</section>
+		        </div>
+		        <!-- <a href="#contact" data-target="anchor" class="main-arrow wow fadeIn" data-wow-delay="1s">
+	                <div class="arrow-down">
+	                    <img src="img/arrow-down.svg" alt="arrow">
+	                </div>
+	            </a>  -->
+		    </div>
+		</section>
+
+		<div id="contact" class="pimg3">
+		    
+		</div>
+
+		<section id="footer">
+			<div class="contact">
+					<ul class="wow fadeInLeft" data-wow-duration="2s">
+						<li><i class="fas fa-home"></i><span>58012, Україна, м. Чернівці, </br>вул. Університетська, 28.</span></li>
+						<li><i class="fas fa-phone"></i><a href="tel: +380372584857"><span>+38 (0372) 58-48-57</span></a></li>
+						<li><i class="fas fa-envelope"></i><a href="mailto:kafedrapmm@gmail.com"><span>kafedrapmm@gmail.com</span></a></li>
+					</ul>
+				<div class="other wow fadeInRight" data-wow-duration="2s">
+					<a href="http://www.chnu.cv.ua/index.php?page=ua">
+						<div class="linkin">
+							<img src="img/univer.png">
+							<span>Чернівецький національний університет</span>
+						</div>
+					</a>
+					<a href="http://fmi.org.ua/">
+						<div class="linkin">
+							<img src="img/fac.png">
+							<span>Факультет математики та інформатики</span>
+						</div>
+					</a>
+					<a href="http://pm.fmi.org.ua/">
+						<div class="linkin">
+							Кафедра прикладної математики та інформаційних технологій
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="bottom">
+			<div class="bottom-side">
+				<span>@Курсова робота</span>
+				<span>Кузьмічов А.А.</span>
+			</div>
+		</section>
+	</div>
+
+	<div class="overlay js-overlay">
+            <div class="popup js-popup">
+                <div class="close-popup js-close"></div>
+                        <p id = "caption">РЕЄСТРАЦІЯ ПРАКТИКИ</p>
+                        <form id="SignupForm" method="POST" action="db.php">
+                            <fieldset>
+                                <legend>Інформація про студента</legend>
+                                <div class="sub">
+                                    <div class="box left">
+                                        <div class="row">
+                                            <label for="name">Ім'я*:</label><br>
+                                            <input type="text" id="name" name="name" required>
+                                        </div>
+                                        <div class="row">
+                                            <label for="surname">Прізвище*:</label><br>
+                                            <input type="text" id="surname" name="surname" required>
+                                        </div>
+                                        <div class="row">
+                                            <label for="thirdname">По батькові*:</label><br>
+                                            <input type="text" id="thirdname" name="thirdname" required>
+                                        </div>
+                                    </div>
+                                    <div class="box right">
+                                        <div class="row">
+                                            <label for="num">Телефон*:</label><br>
+                                            <input type="number" id="num" name="num" required>
+                                        </div>
+                                        <div class="row">
+                                            <label for="email">E-mail*:</label><br>
+                                            <input type="email" id="email" name="email" required>
+                                        </div>
+                                        <div class="row">
+                                            <div id="group_box">
+                                                <label for="group">Група*:</label><br>
+                                                <select name="group" id="group" required>
+                                                    <option value=""></option>
+                                                    <option value="402">402</option>
+                                                    <option value="422">422</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <input type="hidden" name="date" value="<?php echo date('Y-m-d');?>">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                    <legend>Інформація про базу практики</legend>
+
+                                    <div class="sub">
+                                            <div class="box left">
+                                                <div class="row">
+                                                    <label for="baze">База практики*:</label><br>
+                                                    <input type="text" id="baze" name="baze" require>
+                                                </div>
+                                                <div class="row">
+                                                    <label for="adress1">Адреса 1*:</label><br>
+                                                    <input type="text" id="adress1" name="adress1" require>
+                                                </div>
+                                                <div class="row">
+                                                    <label for="adress2">Адреса 2:</label><br>
+                                                    <input type="text" id="adress2" name="adress2">
+                                                </div>
+                                            </div>
+                                            <div class="box right">
+                                                <div class="row">
+                                                    <label for="pib">ПІБ керівника*:</label><br>
+                                                    <input type="text" id="pib" name="pib" require>
+                                                </div>
+                                                <div class="row">
+                                                    <label for="status">Посада:</label><br>
+                                                    <input type="text" id="status" name="status">
+                                                </div>
+                                                <div class="row">
+                                                    <label for="tel_ker">Телефон керівника*:</label><br>
+                                                    <input type="number" id="tel_ker" name="tel_ker" req>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="submit" name="submit" id="SaveAccount" class = "btnForm"  value = "Надіслати"/>
+                            </fieldset>
+                        </form>
+            </div>
+    </div>
+
+	<!-- JS-script -->
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/fixed-menu.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
+
+	
+</body>
+</html>

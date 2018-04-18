@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@font-face {
+	font-family: 'bpicons';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/bpicons/bpicons.eot');
+	src: url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/bpicons/bpicons.woff') format('woff'),
+	url('../fonts/bpicons/bpicons.ttf') format('truetype'),
+	url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
+}
+
+.cf:before,
+.cf:after {
+	content: ' ';
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.hidden {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Main styles */
+body {
+	font-family: 'Century Gothic';
+	color: #222125;
+	background: #F2F5FC;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: #5C5EDC;
+	outline: none;
+}
+
+a:focus {
+	color: #ddd;
+}
+
+a:hover {
+	color: #fff;
+}
+
+.mentor-tags {
+    width: 65%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mentor-item {
+    position: relative;
+    display: flex;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    width: 300px;
+    min-height: 350px;
+    height: 600px;
+    transition: 0.3s;
+}
+
+
+.img-men {
+    width: 14rem;
+    border-radius: 0.4rem;
+}
+
+
+.mentor-item span {
+    font-size: 14px;
+    width: 12rem;
+    color: #aaa;
+}
+
+.mentor-item h4 {
+    font-size: 24px;
+    color: #333;
+}
+
+.mentor-item p {
+    font-size: 16px;
+    width: 14rem;
+    color: #aaa;
+}
